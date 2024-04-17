@@ -1,10 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: tahoma;
     height: 100vh;
     /* background-image: url(https://picsum.photos/g/3000/2000); */
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: #1c1e1e;
+}
+
+@font-face {
+    font-family: "Samkaran";
+    src: url("../samkaran.TTF") format("truetype");
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row {
+    flex-direction: row;
 }
 
 .container{
@@ -13,6 +35,56 @@ body {
     align-items: center; */
     width: 2000px;
     height: 100vh;
+}
+
+.gap-2 {
+    gap: 5px;
+}
+
+.header {
+    font-family: "ubuntu";
+    font-size: 9vw;
+    color: #fff;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.samkaran {
+    font-family: "Samkaran";
+    color: #fff;
+}
+
+.header-logo {
+    height: 5vw;
+    width: 5vw;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 1s ease;
+    background: #1c1e1e;
+}
+
+.header-logo img {
+    height: 8vw;
+    width: 8vw;
+}
+
+.bg-1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: conic-gradient(at 62.5% 12.5%, #00ddff 25%, #0000 0) calc(32px / -8) calc(32px / 2),
+        conic-gradient(at 62.5% 12.5%, #00ddff 25%, #0000 0) calc(-3 * 32px / 8) calc(32px / 4),
+        conic-gradient(at 87.5% 62.5%, #00ddff 25%, #0000 0) calc(3 * 32px / 8) calc(32px / 4), conic-gradient(at 87.5% 62.5%, #00ddff 25%, #0000 0) calc(32px / -8) 0,
+        conic-gradient(at 25% 12.5%, #00ddff 25%, #0000 0) 0 calc(32px / -4), conic-gradient(at 25% 12.5%, #00ddff 25%, #0000 0) calc(32px / -4) 0,
+        conic-gradient(at 87.5% 87.5%, #00ddff 25%, #0000 0) calc(32px / 8) 0 #000000;
+    background-size: 32px 32px;
+    z-index: 0;
+    opacity: 0.025;
 }
 
 .row{
@@ -30,11 +102,13 @@ body {
     padding: 30px 0 40px;
     margin: 30px;
     background-color: #f7f5ec;
+    background-color: #cacacac5;
     text-align: center;
     overflow: hidden;
     position: relative;
     min-width: 200px;
     width: 20%;
+    height: 35%;
 }
 
 .our-team .picture {
