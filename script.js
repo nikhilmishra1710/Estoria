@@ -1,6 +1,6 @@
 var logo = document.querySelector("#logo");
 
-var paths = ["logo.jpg", "IMG_1702.png"];
+var paths = ["./logo.jpg", "./IMG_1702.png"];
 
 var i = 0;
 
