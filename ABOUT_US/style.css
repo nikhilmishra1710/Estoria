@@ -1,6 +1,12 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hover-color: #52b2bf;
+    --hover-social-icon: #fff;
 }
 
 body {
@@ -14,6 +20,17 @@ body {
     /* padding-top: 150px; */
     background: #1c1e1e;
     overflow-x: hidden;
+    background:
+        conic-gradient(at 62.5% 12.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(28px/-8) calc(28px/2),
+        conic-gradient(at 62.5% 12.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(-3*28px/8) calc(28px/4),
+        conic-gradient(at 87.5% 62.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(3*28px/8) calc(28px/4),
+        conic-gradient(at 87.5% 62.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(28px/-8) 0,
+        conic-gradient(at 25% 12.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) 0 calc(28px/-4),
+        conic-gradient(at 25% 12.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(28px/-4) 0,
+        conic-gradient(at 87.5% 87.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(28px/8) 0 #1b1d1d;
+    background-size: 28px 28px;
+
+
 }
 
 @font-face {
@@ -31,11 +48,61 @@ body {
     flex-direction: row;
 }
 
-.container{
+.navbar {
+    position: absolute;
+    height: 100vh;
+    min-width: 50px;
+    width: 5%;
+    /* background-color: #859bff; */
+    left: 0;
+    position: fixed;
+    /* background: radial-gradient(at bottom right, rgba(2, 45, 54, 0.56) 0, rgba(2, 45, 54, 0.56) 6px, rgba(2, 45, 54, 0.2) 6px, rgba(2, 45, 54, 0.2) 12px, rgba(2, 45, 54, 0.75) 12px, rgba(2, 45, 54, 0.75) 18px, rgba(2, 45, 54, 0.25) 18px, rgba(2, 45, 54, 0.25) 24px, rgba(2, 45, 54, 0.3) 24px, rgba(2, 45, 54, 0.3) 30px, rgba(2, 45, 54, 0.75) 30px, rgba(2, 45, 54, 0.75) 36px, rgba(2, 45, 54, 0.2) 36px, rgba(2, 45, 54, 0.2) 42px, transparent 42px, transparent 48px), radial-gradient(at top left, transparent 0, transparent 6px, rgba(2, 45, 54, 0.2) 6px, rgba(2, 45, 54, 0.2) 12px, rgba(2, 45, 54, 0.75) 12px, rgba(2, 45, 54, 0.75) 18px, rgba(2, 45, 54, 0.3) 18px, rgba(2, 45, 54, 0.3) 24px, rgba(2, 45, 54, 0.25) 24px, rgba(2, 45, 54, 0.25) 30px, rgba(2, 45, 54, 0.75) 30px, rgba(2, 45, 54, 0.75) 36px, rgba(2, 45, 54, 0.2) 36px, rgba(2, 45, 54, 0.2) 42px, rgba(2, 45, 54, 0.56) 42px, rgba(2, 45, 54, 0.56) 48px, transparent 48px, transparent 120px);
+    background-blend-mode: multiply;
+    background-size: 48px 48px, 48px 48px;
+    background-color: #1f456e; */
+
+    /* background: radial-gradient(at bottom right, rgba(14, 85, 95, 0.67) 0, rgba(14, 85, 95, 0.67) 8px, rgba(14, 85, 95, 0.2) 8px, rgba(14, 85, 95, 0.2) 16px, rgba(14, 85, 95, 0.75) 16px, rgba(14, 85, 95, 0.75) 24px, rgba(14, 85, 95, 0.25) 24px, rgba(14, 85, 95, 0.25) 32px, rgba(14, 85, 95, 0.3) 32px, rgba(14, 85, 95, 0.3) 40px, rgba(14, 85, 95, 0.75) 40px, rgba(14, 85, 95, 0.75) 48px, rgba(14, 85, 95, 0.2) 48px, rgba(14, 85, 95, 0.2) 56px, transparent 56px, transparent 64px), radial-gradient(at top left, transparent 0, transparent 8px, rgba(14, 85, 95, 0.2) 8px, rgba(14, 85, 95, 0.2) 16px, rgba(14, 85, 95, 0.75) 16px, rgba(14, 85, 95, 0.75) 24px, rgba(14, 85, 95, 0.3) 24px, rgba(14, 85, 95, 0.3) 32px, rgba(14, 85, 95, 0.25) 32px, rgba(14, 85, 95, 0.25) 40px, rgba(14, 85, 95, 0.75) 40px, rgba(14, 85, 95, 0.75) 48px, rgba(14, 85, 95, 0.2) 48px, rgba(14, 85, 95, 0.2) 56px, rgba(14, 85, 95, 0.67) 56px, rgba(14, 85, 95, 0.67) 64px, transparent 64px, transparent 160px);
+    background-blend-mode: multiply;
+    background-size: 64px 64px, 64px 64px;
+    background-color: #60a1e6; */
+
+    background:
+        radial-gradient(64px at 100% 0, #52b2bf 6.25%, rgba(24, 26, 47, 0.53) 6.3% 18.75%, #52b2bf 18.8% 31.25%, rgba(24, 26, 47, 0.53) 31.3% 43.75%, #52b2bf 43.8% 56.25%, rgba(24, 26, 47, 0.53) 56.3% 68.75%, #0000 0),
+        radial-gradient(64px at 0 0, #52b2bf 6.25%, rgba(24, 26, 47, 0.53) 6.3% 18.75%, #52b2bf 18.8% 31.25%, rgba(24, 26, 47, 0.53) 31.3% 43.75%, #52b2bf 43.8% 56.25%, rgba(24, 26, 47, 0.53) 56.3% 68.75%, #0000 0),
+        radial-gradient(64px at 0 100%, #52b2bf 6.25%, rgba(24, 26, 47, 0.53) 6.3% 18.75%, #52b2bf 18.8% 31.25%, rgba(24, 26, 47, 0.53) 31.3% 43.75%, #52b2bf 43.8% 56.25%, rgba(24, 26, 47, 0.53) 56.3% 68.75%, #0000 0),
+        radial-gradient(64px at 100% 100%, #52b2bf 6.25%, rgba(24, 26, 47, 0.53) 6.3% 18.75%, #52b2bf 18.8% 31.25%, rgba(24, 26, 47, 0.53) 31.3% 43.75%, #52b2bf 43.8% 56.25%, rgba(24, 26, 47, 0.53) 56.3% 68.75%, #0000 0) #52b2bf;
+    background-size: 64px 64px;
+    background-color: #52b2bf;
+}
+
+.navbar ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar li {
+    margin-block: 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+
+    i {
+        color: #f7f5ec;
+        font-size: max(25px, 2.25em);
+    }
+}
+
+.container {
     /* display: flex;
     justify-content: space-around;
     align-items: center; */
-    width: 1500px;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -45,7 +112,7 @@ body {
 
 .header {
     font-family: "ubuntu";
-    font-size: 9vw;
+    font-size: max(9vw, 70px);
     color: #fff;
     text-align: center;
     margin-top: 12rem;
@@ -76,27 +143,20 @@ body {
     width: 8vw;
 }
 
-.bg-1 {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: conic-gradient(at 62.5% 12.5%, #00ddff 25%, #0000 0) calc(32px / -8) calc(32px / 2),
-        conic-gradient(at 62.5% 12.5%, #00ddff 25%, #0000 0) calc(-3 * 32px / 8) calc(32px / 4),
-        conic-gradient(at 87.5% 62.5%, #00ddff 25%, #0000 0) calc(3 * 32px / 8) calc(32px / 4), conic-gradient(at 87.5% 62.5%, #00ddff 25%, #0000 0) calc(32px / -8) 0,
-        conic-gradient(at 25% 12.5%, #00ddff 25%, #0000 0) 0 calc(32px / -4), conic-gradient(at 25% 12.5%, #00ddff 25%, #0000 0) calc(32px / -4) 0,
-        conic-gradient(at 87.5% 87.5%, #00ddff 25%, #0000 0) calc(32px / 8) 0 #000000;
-    background-size: 32px 32px;
-    z-index: 0;
-    opacity: 0.025;
+.top-row {
+    width: 100vw;
+    flex-wrap: wrap;
+    /* padding-inline: 70px; */
 }
 
-.row{
+.row {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    height: 100%;
+    height: auto;
+    padding-inline: 70px;
     /* background-color: #1369ce; */
 
 }
@@ -104,23 +164,26 @@ body {
 .our-team {
     padding: 30px 0 40px;
     margin: 30px;
-    background-color: #f7f5ec;
-    background-color: #cacacac5;
     text-align: center;
     overflow: hidden;
     position: relative;
-    min-width: 200px;
+    min-width: 300px;
     width: 20%;
-    min-height: 250px;
-    height: 35%;
+    min-height: 330px;
+    height: 45%;
     border-radius: 15px;
+
+    /* background: rgba(250, 245, 230, 0.537); */
+    background: whitesmoke;
+    backdrop-filter: blur(3px);
+
 }
 
 .our-team .picture {
     display: inline-block;
     height: 130px;
     width: 130px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     z-index: 1;
     position: relative;
 }
@@ -130,7 +193,7 @@ body {
     width: 100%;
     height: 0;
     border-radius: 50%;
-    background-color: #2a3330;
+    background-color: var(--hover-color);
     position: absolute;
     bottom: 135%;
     right: 0;
@@ -149,7 +212,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #2a3330;
+    background-color: var(--hover-color);
     position: absolute;
     top: 0;
     left: 0;
@@ -170,6 +233,15 @@ body {
     transform: scale(0.7);
 }
 
+.our-team .name {
+    color: #1b1d1d;
+    text-transform: capitalize;
+
+    span {
+        color: #1b1d1d;
+    }
+}
+
 .our-team .title {
     display: block;
     font-size: 15px;
@@ -181,7 +253,7 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: #2a3330;
+    background-color: var(--hover-color);
     position: absolute;
     bottom: -100px;
     left: 0;
@@ -204,13 +276,17 @@ body {
     transition: all 0.3s ease 0s;
     text-decoration: none;
 
-    i{
+    i {
         font-size: 25px;
         font-weight: 500;
     }
 }
 
 .our-team .social li a:hover {
-    color: #1369ce;
-    background-color: #f7f5ec;
+    color: var(--hover-color);
+    background-color: var(--hover-social-icon);
+
+    i {
+        font-weight: 500;
+    }
 }
