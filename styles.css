@@ -9,6 +9,7 @@
 
 body {
     overflow-x: hidden;
+    scroll-snap-type: mandatory;
 }
 
 @font-face {
