@@ -1,5 +1,6 @@
 :root {
     --hover-color: #2c3230;
+    /* --hover-color: #FFD700; */
     --hover-social-icon: #fff;
 }
 
@@ -17,7 +18,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* padding-top: 150px; */
+    padding-top: 70px;
     background: #1c1e1e;
     overflow-x: hidden;
     background:
@@ -65,7 +66,7 @@ body {
     font-size: max(9vw, 70px);
     color: #fff;
     text-align: center;
-    margin-top: 12rem;
+    margin-top: auto;
 }
 
 .samkaran {
@@ -93,9 +94,14 @@ body {
     width: 8vw;
 }
 
+.sub-heading{
+    font-size: max(6vw, 50px);
+}
+
 .top-row {
     width: 100vw;
     flex-wrap: wrap;
+    padding-inline: 70px;
     /* padding-inline: 70px; */
 }
 
@@ -239,4 +245,12 @@ body {
     i {
         font-weight: 500;
     }
+}
+
+hr{
+    width: 90%;
+    margin: auto;
+    height: 0.25px;
+    border: 0.25px solid whitesmoke;
+    margin-block: 25px;
 }
