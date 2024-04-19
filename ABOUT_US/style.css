@@ -1,12 +1,12 @@
+:root {
+    --hover-color: #2c3230;
+    --hover-social-icon: #fff;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-:root {
-    --hover-color: #52b2bf;
-    --hover-social-icon: #fff;
 }
 
 body {
@@ -46,56 +46,6 @@ body {
 
 .flex-row {
     flex-direction: row;
-}
-
-.navbar {
-    position: absolute;
-    height: 100vh;
-    min-width: 50px;
-    width: 5%;
-    /* background-color: #859bff; */
-    left: 0;
-    position: fixed;
-    /* background: radial-gradient(at bottom right, rgba(2, 45, 54, 0.56) 0, rgba(2, 45, 54, 0.56) 6px, rgba(2, 45, 54, 0.2) 6px, rgba(2, 45, 54, 0.2) 12px, rgba(2, 45, 54, 0.75) 12px, rgba(2, 45, 54, 0.75) 18px, rgba(2, 45, 54, 0.25) 18px, rgba(2, 45, 54, 0.25) 24px, rgba(2, 45, 54, 0.3) 24px, rgba(2, 45, 54, 0.3) 30px, rgba(2, 45, 54, 0.75) 30px, rgba(2, 45, 54, 0.75) 36px, rgba(2, 45, 54, 0.2) 36px, rgba(2, 45, 54, 0.2) 42px, transparent 42px, transparent 48px), radial-gradient(at top left, transparent 0, transparent 6px, rgba(2, 45, 54, 0.2) 6px, rgba(2, 45, 54, 0.2) 12px, rgba(2, 45, 54, 0.75) 12px, rgba(2, 45, 54, 0.75) 18px, rgba(2, 45, 54, 0.3) 18px, rgba(2, 45, 54, 0.3) 24px, rgba(2, 45, 54, 0.25) 24px, rgba(2, 45, 54, 0.25) 30px, rgba(2, 45, 54, 0.75) 30px, rgba(2, 45, 54, 0.75) 36px, rgba(2, 45, 54, 0.2) 36px, rgba(2, 45, 54, 0.2) 42px, rgba(2, 45, 54, 0.56) 42px, rgba(2, 45, 54, 0.56) 48px, transparent 48px, transparent 120px);
-    background-blend-mode: multiply;
-    background-size: 48px 48px, 48px 48px;
-    background-color: #1f456e; */
-
-    /* background: radial-gradient(at bottom right, rgba(14, 85, 95, 0.67) 0, rgba(14, 85, 95, 0.67) 8px, rgba(14, 85, 95, 0.2) 8px, rgba(14, 85, 95, 0.2) 16px, rgba(14, 85, 95, 0.75) 16px, rgba(14, 85, 95, 0.75) 24px, rgba(14, 85, 95, 0.25) 24px, rgba(14, 85, 95, 0.25) 32px, rgba(14, 85, 95, 0.3) 32px, rgba(14, 85, 95, 0.3) 40px, rgba(14, 85, 95, 0.75) 40px, rgba(14, 85, 95, 0.75) 48px, rgba(14, 85, 95, 0.2) 48px, rgba(14, 85, 95, 0.2) 56px, transparent 56px, transparent 64px), radial-gradient(at top left, transparent 0, transparent 8px, rgba(14, 85, 95, 0.2) 8px, rgba(14, 85, 95, 0.2) 16px, rgba(14, 85, 95, 0.75) 16px, rgba(14, 85, 95, 0.75) 24px, rgba(14, 85, 95, 0.3) 24px, rgba(14, 85, 95, 0.3) 32px, rgba(14, 85, 95, 0.25) 32px, rgba(14, 85, 95, 0.25) 40px, rgba(14, 85, 95, 0.75) 40px, rgba(14, 85, 95, 0.75) 48px, rgba(14, 85, 95, 0.2) 48px, rgba(14, 85, 95, 0.2) 56px, rgba(14, 85, 95, 0.67) 56px, rgba(14, 85, 95, 0.67) 64px, transparent 64px, transparent 160px);
-    background-blend-mode: multiply;
-    background-size: 64px 64px, 64px 64px;
-    background-color: #60a1e6; */
-
-    background:
-        radial-gradient(64px at 100% 0, #52b2bf 6.25%, rgba(24, 26, 47, 0.53) 6.3% 18.75%, #52b2bf 18.8% 31.25%, rgba(24, 26, 47, 0.53) 31.3% 43.75%, #52b2bf 43.8% 56.25%, rgba(24, 26, 47, 0.53) 56.3% 68.75%, #0000 0),
-        radial-gradient(64px at 0 0, #52b2bf 6.25%, rgba(24, 26, 47, 0.53) 6.3% 18.75%, #52b2bf 18.8% 31.25%, rgba(24, 26, 47, 0.53) 31.3% 43.75%, #52b2bf 43.8% 56.25%, rgba(24, 26, 47, 0.53) 56.3% 68.75%, #0000 0),
-        radial-gradient(64px at 0 100%, #52b2bf 6.25%, rgba(24, 26, 47, 0.53) 6.3% 18.75%, #52b2bf 18.8% 31.25%, rgba(24, 26, 47, 0.53) 31.3% 43.75%, #52b2bf 43.8% 56.25%, rgba(24, 26, 47, 0.53) 56.3% 68.75%, #0000 0),
-        radial-gradient(64px at 100% 100%, #52b2bf 6.25%, rgba(24, 26, 47, 0.53) 6.3% 18.75%, #52b2bf 18.8% 31.25%, rgba(24, 26, 47, 0.53) 31.3% 43.75%, #52b2bf 43.8% 56.25%, rgba(24, 26, 47, 0.53) 56.3% 68.75%, #0000 0) #52b2bf;
-    background-size: 64px 64px;
-    background-color: #52b2bf;
-}
-
-.navbar ul {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-}
-
-.navbar li {
-    margin-block: 10px;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-
-    i {
-        color: #f7f5ec;
-        font-size: max(25px, 2.25em);
-    }
 }
 
 .container {
