@@ -16,6 +16,11 @@ body {
     src: url("./samkaran.TTF") format("truetype");
 }
 
+/* @font-face {
+    font-family: "Vasca";
+    src: url("./Vasca.ttf") format("truetype");
+} */
+
 .kalam-light {
     font-family: "Kalam", cursive;
     font-weight: 300;
