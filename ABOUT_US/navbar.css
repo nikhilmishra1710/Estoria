@@ -1,3 +1,17 @@
+.hamburger{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: none;
+    position: fixed;
+}
+
+.hamburger i{
+    font-size: 40px;
+    color: whitesmoke;
+}
+
 .navbar {
     position: absolute;
     height: 100vh;
@@ -7,6 +21,9 @@
     position: fixed;
     background: none;
     z-index: 10;
+    padding-left: 10px;
+    /* animation: reveal 1s linear 1 alternate; */
+    /* display: flex; */
 }
 
 .navbar ul {
@@ -71,3 +88,21 @@
     z-index: 1;
     margin-left: 200px;
 }
+
+@media screen and (max-width: 768px){
+    .hamburger{
+        display: flex;
+    }
+    .navbar{
+        display: none;
+    }
+}
+
+/* @keyframes reveal{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 5%;
+    }
+} */
