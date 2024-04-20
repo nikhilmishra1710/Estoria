@@ -1,0 +1,157 @@
+body{
+  background:
+        conic-gradient(at 62.5% 12.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(28px/-8) calc(28px/2),
+        conic-gradient(at 62.5% 12.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(-3*28px/8) calc(28px/4),
+        conic-gradient(at 87.5% 62.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(3*28px/8) calc(28px/4),
+        conic-gradient(at 87.5% 62.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(28px/-8) 0,
+        conic-gradient(at 25% 12.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) 0 calc(28px/-4),
+        conic-gradient(at 25% 12.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(28px/-4) 0,
+        conic-gradient(at 87.5% 87.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(28px/8) 0 #1b1d1d;
+  background-size: 28px 28px;
+}
+@font-face {
+  font-family: "Samkaran";
+  src: url("samkaran.TTF") format("truetype");
+}
+.samkaran {
+  font-family: "Samkaran";
+  color: #fff;
+  font-weight: bolder;
+}
+.menu {
+  display: block;
+  position: relative;
+  width: 150px;
+  list-style-type:none;
+  z-index: 1;
+}
+.sub_title{
+  font-size: 25px;
+  margin-left: 1.2em;
+}
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease;
+}
+
+.menu > li > a {
+  background: rgb(245, 209, 143);
+  color: black;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  border-radius: 20px;
+}
+
+.menu ul {
+  background: #ddd;
+  height: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  transition: all .5s ease;
+  list-style-type:none;
+  width: 70%;
+  border-radius: 4px;
+}
+
+.menu li ul::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+.menu li ul::-webkit-scrollbar-thumb {
+  background-color: grey;
+}
+
+.menu li ul::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.menu ul a {
+  color: #000;
+  display: block;
+  text-decoration: none;
+  margin-left:-36px;
+  padding-top: 10px;
+}
+.menu ul a:hover,
+.menu ul a:focus{
+  background-color:rgb(213, 206, 193) ;
+}
+.title
+{
+  font-size: 50px;
+  text-align: center;
+}
+.gallery {
+  display: flex;
+  padding: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.gallery:hover .gallery__image {
+  filter: grayscale(1);
+}
+.gallery__column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 25%;
+}
+.gallery__link {
+  margin: -14px;
+  overflow: hidden;
+  margin-right: -50px;
+}
+.gallery__link:hover .gallery__image {
+  filter: grayscale(0);
+}
+.gallery__link:hover .gallery__caption {
+  opacity: 1;
+}
+.gallery__thumb {
+  position: relative;
+}
+.gallery__image {
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
+.gallery__image:hover {
+  transform: scale(1.1);
+}
+.gallery__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px 15px 15px;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: white;
+  opacity: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transition: 0.3s;
+}
+@media screen and (max-width: 800px) {
+  .gallery__column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gallery__column {
+    width: 100%;
+  }
+  
+  .gallery__link {
+    margin: 0;
+  }
+}
