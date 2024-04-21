@@ -193,7 +193,7 @@ body {
 
 .bg-1 {
     position: absolute;
-    height: 100vh;
+    height: max(100vh,100%);
     width: 100vw;
     background: conic-gradient(at 62.5% 12.5%, #00ddff 25%, #0000 0) calc(32px / -8) calc(32px / 2),
         conic-gradient(at 62.5% 12.5%, #00ddff 25%, #0000 0) calc(-3 * 32px / 8) calc(32px / 4),
