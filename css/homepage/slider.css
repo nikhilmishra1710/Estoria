@@ -1,21 +1,11 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}*/
-body{
-    background-image: linear-gradient(180deg, #292929 0%, #161616 90%)
-} 
 
 .container-gallery{
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,0%);
-    width: 90%;
-    height: 600px;
+    
+    width: 80%;
+    height: 90%;
     /* background: #f5f5f5; */
-    box-shadow: 0 30px 50px #dbdbdb;
+    box-shadow: 0 30px 50px rgb(24, 36, 65);
     border-radius: 10px;
     
 }
@@ -27,7 +17,7 @@ body{
     top: 50%;
     transform: translate(0, -50%);
     border-radius: 20px;
-    box-shadow: 0 30px 50px #505050;
+    box-shadow: 0 30px 50px #0d1335;
     background-position: 50% 50%;
     background-size: cover;
     display: inline-block;
