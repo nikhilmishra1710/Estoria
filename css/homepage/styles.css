@@ -14,7 +14,7 @@ body {
 
 @font-face {
     font-family: "Samkaran";
-    src: url("./samkaran.TTF") format("truetype");
+    src: url("../../assets/Fonts/samkaran.TTF") format("truetype");
 }
 
 /* @font-face {
