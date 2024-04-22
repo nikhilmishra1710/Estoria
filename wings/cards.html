@@ -1,121 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="practisejava.js"> -->
+    <link rel="stylesheet" href="../css/navbar/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<!-- <body style="background-image: linear-gradient(180deg, #292929 0%, #161616 90%)"> -->
- <body>
-    <!-- <div class="main-heading"><h1>OUR WINGS</h1> </div> -->
-        <!-- <script src="practisejava.js"></script> -->
-        <div class="flex flex-row gap-2">
-            <!-- <div class="header-logo">
-              <img src="logo.jpg" alt="logo" />
-            </div> -->
-            <div class="header"><span class="samkaran">OUR</span>W<span class="samkaran">INGS</span></div>
-          </div>
-        
+
+<body>
+    <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+    <div class="navbar active">
+        <ul>
+            <li>
+                <a href="./index.html"><i class="fa-solid fa-house"></i></a><span class="tooltip">HOME</span>
+            </li>
+            <li>
+                <a href="./timeline/timeline.html"><i class="fas fa-calendar-alt"></i></a><span
+                    class="tooltip">EVENTS</span>
+            </li>
+            <li>
+                <a href="./gallery/index.html"><i class="fa-solid fa-camera-retro"></i></a><span
+                    class="tooltip">GALLERY</span>
+            </li>
+            <li>
+                <a href="./ABOUT_US/index.html"><i class="fa-solid fa-people-group"></i></a><span class="tooltip">OUR
+                    TEAM</span>
+            </li>
+            <li>
+                <a href=""><i class="fas fa-feather-alt wing-icon"></i></a><span class="tooltip">OUR WINGS</span>
+            </li>
+            <li>
+                <a href="./index.html#contactUs"><i class="fa-solid fa-phone"></i></a><span class="tooltip">CONTACT
+                    US</span>
+            </li>
+        </ul>
     </div>
-    <!-- <div class="heading"><h1>CULTURAL</h1></div>  -->
+    <div class="flex flex-row gap-2">
+        <div class="header"><span class="samkaran">OUR</span>W<span class="samkaran">INGS</span></div>
+    </div>
+
+    </div>
     <div class="flex flex-row gap-2">
         <div class="header sub-heading">C<span class="samkaran">ULTURAL</span></div>
-      </div>
-    <div class="content">  
-        <!-- <div class="bg-1"></div> -->
+    </div>
+    <div class="content">
         <div class="card">
             <div class="content">
-                <h2>01                
+                <h2>01
                 </h2>
                 <h3>ACTING</h3>
-                
+
             </div>
         </div>
         <div class="card">
             <div class="content">
-                <h2>02               
+                <h2>02
                 </h2>
                 <h3>POETRY</h3>
-                
+
             </div>
         </div>
         <div class="card">
             <div class="content">
-                <h2>03               
+                <h2>03
                 </h2>
                 <h3>CINEMATO-GRAPHY</h3>
-                
+
             </div>
         </div>
         <div class="card">
             <div class="content">
-                <h2>04                
+                <h2>04
                 </h2>
                 <h3>SCRIPT-WRITING</h3>
-                
+
             </div>
         </div>
-        <!-- <script src="practisejava.js"></script> -->
-        
+
     </div>
-    <!-- <div class="heading"><h1>NON CULTURAL</h1></div>  -->
     <div class="flex flex-row gap-2">
         <div class="header sub-heading">N<span class="samkaran">ON</span> C<span class="samkaran">ULTURAL</span></div>
-      </div>
-    <div class="content">  
-        <!-- <div class="bg-1"></div> -->
+    </div>
+    <div class="content">
         <div class="card">
             <div class="content">
-                <h2>01                
+                <h2>01
                 </h2>
                 <h3>MANAGEMENT</h3>
-               
+
             </div>
         </div>
         <div class="card">
             <div class="content">
-                <h2>02               
+                <h2>02
                 </h2>
                 <h3>MARKETING</h3>
-                
+
             </div>
         </div>
         <div class="card">
             <div class="content">
-                <h2>03                
+                <h2>03
                 </h2>
                 <h3>COORPORATE & PR</h3>
-                
+
             </div>
         </div>
         <div class="card">
             <div class="content">
-                <h2>04                
+                <h2>04
                 </h2>
                 <h3>DESIGN</h3>
-                
+
             </div>
         </div>
         <div class="card">
             <div class="content">
-                <h2>05                
+                <h2>05
                 </h2>
                 <h3>SOCIAL MEDIA</h3>
-                
+
             </div>
         </div>
-        <!-- <script src="practisejava.js"></script> -->
-        
     </div>
-    
+
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>VanillaTilt.init(document.querySelectorAll(".card"), {
-        max: 25,
-        speed: 400
-    });
-</script>
+            max: 25,
+            speed: 400
+        });
+    </script>
+    <script src="../js/navbar/navbar.js"></script>
 
 </body>
+
 </html>
