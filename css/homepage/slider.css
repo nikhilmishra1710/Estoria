@@ -1,10 +1,11 @@
 .container-gallery {
     position: relative;
-
+    margin-bottom: 50px;
+    margin-left: -50px;
     width: 80%;
     height: 80%;
     min-height: 500px;
-    box-shadow: 0 30px 50px rgb(24, 36, 65);
+    box-shadow: 0 30px 30px rgb(194, 196, 201);
     border-radius: 10px;
 }
 
@@ -13,9 +14,9 @@
     height: 300px;
     position: absolute;
     top: 50%;
-    transform: translate(0, -50%);
+    transform: translate(-20%, -50%);
     border-radius: 20px;
-    box-shadow: 0 30px 50px #0d1335;
+    box-shadow: 0 30px 30px rgb(194, 196, 201)5;
     background-position: 50% 50%;
     background-size: cover;
     display: inline-block;
