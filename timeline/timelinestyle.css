@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Titan+One&display=swap');
 
+
 *,
 *::before,
 *::after {
@@ -41,24 +42,46 @@ body {
   font-family: "Samkaran";
   text-align: center;
   padding: 4rem;
-  font-size: 60px;
+  font-size: max(3vw, 60px);
   /* background-color: inherit; */
   /* opacity: 1; */
 }
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-/* .bg-2 {
-  position: absolute;
-  height: 100%;
-  width: 100vw;
-  background: radial-gradient(35.36% 35.36% at 100% 25%, #0000 66%, #000000 68% 70%, #0000 72%) 32px 32px / calc(2 * 32px) calc(2 * 32px),
-      radial-gradient(35.36% 35.36% at 0 75%, #0000 66%, #000000 68% 70%, #0000 72%) 32px 32px / calc(2 * 32px) calc(2 * 32px),
-      radial-gradient(35.36% 35.36% at 100% 25%, #0000 66%, #000000 68% 70%, #0000 72%) 0 0 / calc(2 * 32px) calc(2 * 32px),
-      radial-gradient(35.36% 35.36% at 0 75%, #0000 66%, #000000 68% 70%, #0000 72%) 0 0 / calc(2 * 32px) calc(2 * 32px),
-      repeating-conic-gradient(#00fffc 0 25%, #0000 0 50%) 0 0 / calc(2 * 32px) calc(2 * 32px),
-      radial-gradient(#0000 66%, #000000 68% 70%, #0000 72%) 0 calc(32px / 2) / 32px 32px #00fffc;
-  opacity: 0.025;
-  z-index: 0;
-} */
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.gap-2 {
+  gap: 5px;
+}
+.header {
+  font-family: "ubuntu";
+  font-size: max(7vw, 60px);
+  color: #fff;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem; 
+ 
+}
+
+.heading-sec{
+  color:white;
+  font-family: "Samkaran";
+  text-align: center;
+  padding: 4rem;
+  font-size: max(5vw, 50px);
+}
 
 .timeline ul li {
   list-style-type: none;
@@ -109,9 +132,6 @@ body {
   visibility: visible;
   opacity: 1;
 }
-.image{
-  /* height:; */
-}
 
 @media screen and (max-width: 900px) {
   .timeline ul li div {
@@ -151,89 +171,46 @@ body {
     width: 90%; 
   }
 }
-
-/* chatGPT CSS */
-@media only screen and (max-width: 600px) {
-  
-  .tickets-container .item {
-    width: 100%;
+@media only screen and (max-width: 900px ) and (min-width:600px){
+  .upcoming-event-container .items {
+    width: 500px;
+    height: 1000px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px; /* Added margin for space between items */
   }
-  .tickets-container .item h2{
+  .upcoming-event-container .card{
+    height: 450px;
+    width: 90%;
+    padding: 10px; 
+  }
+} 
+
+@media only screen and (max-width: 600px) {
+  
+  .upcoming-event-container .items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 830px;
+    margin-bottom: 20px; /* Added margin for space between items */
+  }
+  .upcoming-event-container .items h2{
     width: 100%;
     padding: 0;
     margin:0;
   }
-  .tickets-container .item p{
+  .upcoming-event-container .items p{
     width: 100%;
     padding: 0;
     margin:0;
   }
-  .tickets-container .item-left {
-    height: 200px;
+  .upcoming-event-container .card{
+    height: 370px;
     width: 400px;
     padding: 10px; 
   }
 
-  .register-button {
-    margin-top: 0px; /* Adjusted margin for button */ /* Adjusted padding for button */
-    position: relative;
-    top: 0;
-    left: 0;
-    font-size: 16px; /* Adjusted font size for button */
-  }
-
-  .tickets-container .item-left .event {
-    font-size: 24px; /* Adjusted font size for event name */
-    margin-top: 10px; /* Adjusted margin for event name */
-  }
-
-  .date {
-    font-size: 16px; /* Adjusted font size for date */
-    margin-top: 5px; /* Adjusted margin for date */
-    margin-bottom: 15px; /* Adjusted margin for date */
-  }
-
-  .item-right {
-    height: 100px;
-    width: 400px;
-    margin-top: 20px; /* Adjusted margin for space between left and right items */
-  }
-
-  .slides {
-    background-size: contain;
-    min-width: 100%; /* Full width for slides */
-  }
-
-  .slide img {
-    height: 300px;
-    width: 400px;
-    border-radius: 0; /* Removed border radius for images */
-  }
-  .past-event-box{
-    margin-top: 20%;
-
-  }
-  .nav label {
-    font-size: 70px; /* Adjusted font size for navigation */
-  }
-
-  .nav-dots {
-    top: 250px; /* Adjusted top position of nav-dots */
-    left:30px;
-  }
-
-  .nav-dots .nav-dot {
-    top: 10px; /* Adjusted top position of nav-dots */
-    width: 8px; /* Adjusted width of nav-dots */
-    height: 8px; /* Adjusted height of nav-dots */
-    margin: 0 4px; /* Adjusted margin of nav-dots */
-  }
-
-  .nav-dots .nav-dot:hover {
-    background-color: rgba(255, 255, 255, 0.8); /* Adjusted hover background color */
-  }
 }
 
