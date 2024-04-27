@@ -140,7 +140,7 @@ body {
     flex-direction: column;
   }
   .timeline ul li div > div {
-    width: 80%;
+    width: 100%;
     margin: 10px;
   }
   .timeline ul li:nth-of-type(even) > div {
