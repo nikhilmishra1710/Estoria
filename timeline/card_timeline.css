@@ -202,7 +202,7 @@
   justify-content: center;
   color: #ffffff;
   width: 100%;
-
+  
 }
 
 /* Past Event card */
@@ -248,26 +248,107 @@
   border-radius: 5px;
   z-index: 2;
   background-image: url("photo.avif");
-    background-size: cover;
-    background-position:center;
-    filter: grayscale();
-    transition: 0.5s;
-  }
-  
-  .photo:hover {
-    filter: grayscale(0);
-    transform: scale(4);
-  }
-  .content {
-    height: 210px;
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  background-size: cover;
+  background-position:center;
+  filter: grayscale();
+  transition: 0.5s;
+}
+
+.photo:hover {
+  filter: grayscale(0);
+  transform: scale(4);
+}
+.content {
+  height: 210px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
     box-shadow: 4px 13px 30px 1px rgba(33, 17, 17, 0.2);  
     border-radius: 5px;
     padding: 7px;
     padding-top: 0px;
-  }  
+  }
+
+
+  /*modal css  */
+  .modal {
+    height: 60vh;
+    width: 80vw;
+    position: sticky;
+    z-index: 6;
+    top: 20%;
+    left: 10%;
+    background: #1c1e1e;
+    background:
+        conic-gradient(at 62.5% 12.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(28px/-8) calc(28px/2),
+        conic-gradient(at 62.5% 12.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(-3*28px/8) calc(28px/4),
+        conic-gradient(at 87.5% 62.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(3*28px/8) calc(28px/4),
+        conic-gradient(at 87.5% 62.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(28px/-8) 0,
+        conic-gradient(at 25% 12.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) 0 calc(28px/-4),
+        conic-gradient(at 25% 12.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(28px/-4) 0,
+        conic-gradient(at 87.5% 87.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(28px/8) 0 #1b1d1d;
+        background-size: 28px 28px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+  }
+  
+  .modal .flex-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .modal h1{
+    color: white;
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  .modal p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 0.4rem 0 0.2rem;
+    text-align: center;
+    padding:1em;
+  }
+  .btn-open {
+    position: absolute;
+  }
+  .scroll-y{
+    overflow-y: scroll;
+  }
+  .scroll-x{
+    overflow-x:hidden;
+  }
+  .btn{
+    padding: 5px;
+    color:blue;
+    text-decoration: underline;
+  }
+  .btn-close {
+    transform: translate(0px, 3px);
+    padding: 0.6rem 1rem;
+    background: #eee;
+    border-radius: 50%;
+    z-index: 5;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  

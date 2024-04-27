@@ -24,3 +24,33 @@ function callbackFunc() {
  
 window.addEventListener("load", callbackFunc);
 window.addEventListener("scroll", callbackFunc);
+
+// modal js
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+const openModalBtns = document.querySelectorAll(".btn-open");
+const closeModalBtns = document.querySelectorAll(".btn-close");
+
+const closeModal = function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+};
+
+closeModalBtns.forEach(element => {
+  element.addEventListener("click", closeModal);
+});
+overlay.addEventListener("click", closeModal);
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+    closeModal();
+  }
+});
+
+const openModal = function () {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+};
+openModalBtns.forEach(element => {
+  element.addEventListener("click", openModal);
+});
